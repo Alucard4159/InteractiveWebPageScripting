@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gaming D&D Site</title>
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+  <link href="smartmenus/sm-core-css.css" rel="stylesheet">
+  <link href="smartmenus/sm-red.css" rel="stylesheet">
+
+  <script src="includes/jquery.min.js"></script>
+  <script src="includes/jquery-1.11.0.min.js"></script>
+  <script src="includes/jquery-3.6.0.min.js"></script>
+  <script src="includes/jquery-ui.js"></script>
+  <script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+      $('.sm').smartmenus({  
+        showFunction : function($ul, complete) {
+            $ul.slideDown(250, complete);
+        }, 
+        hideFunction : function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+      }); // end smart menus
+			
+		});// end ready 
+		$('#introBtn').on('click', () =>{
+			window.location.href = "Intro.html";
+      });
+	});
+</script>
+<body>
+    <header>
+		<h1>Barovia</h1>
+	</header>
+    <nav>
+      <ul class="sm sm-blue">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">History</a>
+          <ul>
+            <li><a href="strahdInfo.html">Strahd</a></li>
+            <li><a href="vistaniInfo.html">Vistani</a></li>
+            <li><a href="Working.html">Barovians</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul>
+            <li><a href="gatesofBarovia.html">Gates</a></li>
+            <li><a href="Working.html">Woods</a></li>
+            <li><a href="Working.html">Chapter 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Monsters</a>
+          <ul>
+            <li><a href="Working.html">Wolves</a></li>
+            <li><a href="Working.html">Bats</a></li>
+            <li><a href="Working.html">Ghouls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+
+        <aside>
+            <a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd" id="Curse of Strahd Wiki">Wiki</a><br>
+            <a href="https://www.youtube.com/watch?v=RNQ9um_MGS4" id="Sergei Von Zarovic">Sergei Von Zarovich</a><br>
+            <a href="https://www.youtube.com/watch?v=uLpRctqGTWw" id="introduction">Into the Mists</a><br>
+            <a href="https://www.youtube.com/watch?v=dXTNvDeFdVU" id="Barovia">Barovia</a><br>
+            <a href="https://www.youtube.com/watch?v=7h13KAplpk4" id="Grim Lullaby">Grim Lullaby</a> <br>
+        </aside>
+
+        <section id="cxt">
+          <h2>Welcome to the journey into Barovia.</h2>
+          <img src="includes/barovia map.png" width="770" height="255" style="float: right;" > <br>
+          <p>The Idyllic Valley nestled in the Balinok Mountains was a slice of heaven to those who knew of its existence before Strahd's arrival.<br>
+            The serenity of the place was forever shattered when Strahd led a bloody crusade against the enemies of his family that ended here with the 
+            slaughter of hundreds.  <br>
+          </p>
+          <br>
+          <p>Rolling thunderclouds cast a gray pall over the land of Barovia.  A deathly stillness hangs over the dark woods, which are partrolled constantly by 
+            Strahd's wolves and other servitors.
+          </p><br>
+          <div class="ftnBtn" id="introBtn" title="Start">Enter</div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Jessie Higgins | &copy; D&D | WBG310</p>
+    </footer>
+
+</body>
+</html>

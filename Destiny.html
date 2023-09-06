@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gaming D&D Site</title>
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+  <link href="smartmenus/sm-core-css.css" rel="stylesheet">
+  <link href="smartmenus/sm-red.css" rel="stylesheet">
+
+  <script src="includes/jquery.min.js"></script>
+  <script src="includes/jquery-1.11.0.min.js"></script>
+  <script src="includes/jquery-3.6.0.min.js"></script>
+  <script src="includes/jquery-ui.js"></script>
+  <script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+            $('.sm').smartmenus({  
+                showFunction : function($ul, complete) {
+                    $ul.slideDown(250, complete);
+                }, 
+                hideFunction : function($ul, complete) {
+                    $ul.slideUp(250, complete);
+                }
+            }); // end smart menus
+			
+		});// end ready 
+
+        $('#ftnBtn1').hover(function () {
+			$('#descFtn').fadeTo(500, 1);
+			var data = "<p>This fortune tells of history. Knowledge of the ancient will help you better understand your enemy.</p>";
+            $('#descFtn').html(data);
+		}, 
+		function() {
+			$('#descFtn').stop().fadeTo(500, 0);
+		}); // end hover bnt1
+        $('#ftnBtn2').hover(function () {
+			$('#descFtn').fadeTo(500, 1);
+			var data = "<p>This fortune tells of a powerful force for good and protection, a holy symbol of great hope.</p>";
+            $('#descFtn').html(data);
+		}, 
+		function() {
+			$('#descFtn').stop().fadeTo(500, 0);
+		}); // end hover bnt2
+        $('#ftnBtn3').hover(function () {
+			$('#descFtn').fadeTo(500, 1);
+			var data = "<p>This fortune is of power and strength. It tells of a weapon of vengeance: a sword of sunlight.</p>";
+            $('#descFtn').html(data);
+		}, 
+		function() {
+			$('#descFtn').stop().fadeTo(500, 0);
+		}); // end hover bnt3
+        $('#ftnBtn4').hover(function () {
+			$('#descFtn').fadeTo(500, 1);
+			var data = "<p>This fortune sheds light on one who will help you greatly in the battle against darkness.</p>";
+            $('#descFtn').html(data);
+		}, 
+		function() {
+			$('#descFtn').stop().fadeTo(500, 0);
+		}); // end hover bnt4
+        $('#ftnBtn5').hover(function () {
+			$('#descFtn').fadeTo(500, 1);
+			var data = "<p>Your enemy is a creature of darkness, whose powers are beyond mortality. This fortune will lead you to him!</p>";
+            $('#descFtn').html(data);
+		}, 
+		function() {
+			$('#descFtn').stop().fadeTo(500, 0);
+		}); // end hover btn5\
+
+        $('#ftnBtn1').on('click', (evt) =>{
+            evt.preventDefault();
+
+            var imgPath = "includes/tarroka deck/st3.png";
+            var oldImage = $('#photo img');
+            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
+
+            var data = "<p>I see  a kneeling woman-a rose of great beauty plucked too soon. The master of the marsh knows of whome I speak.</p>";
+            $('#cardDesc').html(data);
+
+            newImage.hide();
+            $('#photo').prepend(newImage);
+            newImage.fadeIn(1000);
+            oldImage.fadeOut(1000, function() {
+                $(this).remove();
+            }); // end fadeout
+        }); // end btn1 click
+
+        $('#ftnBtn2').on('click', (evt) =>{
+            evt.preventDefault();
+
+            var imgPath = "includes/tarroka deck/gl8.png";
+            var oldImage = $('#photo img');
+            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
+
+            var data = "<p>What you seek lies in a pile of treasure, beyond a set of amber doors.</p>";
+            $('#cardDesc').html(data);
+
+            newImage.hide();
+            $('#photo').prepend(newImage);
+            newImage.fadeIn(1000);
+            oldImage.fadeOut(1000, function() {
+                $(this).remove();
+            }); // end fadeout
+        }); // end btn2 click
+
+
+        $('#ftnBtn3').on('click', (evt) =>{
+            evt.preventDefault();
+
+            var imgPath = "includes/tarroka deck/sw1.png";
+            var oldImage = $('#photo img');
+            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
+
+            var data = "<p>The treasure lies in a dragons's house, in hands once clean and now corrupted.</p>";
+            $('#cardDesc').html(data);
+
+            newImage.hide();
+            $('#photo').prepend(newImage);
+            newImage.fadeIn(1000);
+            oldImage.fadeOut(1000, function() {
+                $(this).remove();
+            }); // end fadeout
+        }); // end btn3 click
+
+		$('#ftnBtn4').on('click', (evt) =>{
+            evt.preventDefault();
+
+            var imgPath = "includes/tarroka deck/cr9.png";
+            var oldImage = $('#photo img');
+            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="Strahds Enemy">');
+
+            var data = "<p>A werewolf holds a secret hatred for you enemy.  Use her hatred to your advantage.</p>";
+            $('#cardDesc').html(data);
+
+            newImage.hide();
+            $('#photo').prepend(newImage);
+            newImage.fadeIn(1000);
+            oldImage.fadeOut(1000, function() {
+                $(this).remove();
+            }); // end fadeout
+      }); //end btn4 click
+
+      $('#ftnBtn5').on('click', (evt) =>{
+            evt.preventDefault();
+
+            var imgPath = "includes/tarroka deck/cr7.png";
+            var oldImage = $('#photo img');
+            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="Strahds location">');
+
+            var data = "<p>I see a dark figure on a balcony, looking down upon this tortured land with a twisted smile.</p>";
+            $('#cardDesc').html(data);
+
+            newImage.hide();
+            $('#photo').prepend(newImage);
+            newImage.fadeIn(1000);
+            oldImage.fadeOut(1000, function() {
+                $(this).remove();
+            }); // end fadeout
+      }); // end btn5 click
+
+      $('#gatesEnt').on('click', () =>{
+			window.location.href = "gatesofBarovia.html";
+      });
+	});// end main function
+</script>
+<style> 
+</style>
+<body>
+    <header>
+		<h1>Barovia</h1>
+	</header>
+    <nav>
+        <ul class="sm sm-blue">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">History</a>
+              <ul>
+                <li><a href="strahdInfo.html">Strahd</a></li>
+                <li><a href="vistaniInfo.html">Vistani</a></li>
+                <li><a href="Working.html">Barovians</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Chapters</a>
+                <ul>
+                    <li><a href="gatesofBarovia.html">Gates</a></li>
+                    <li><a href="Working.html">Woods</a></li>
+                    <li><a href="Working.html">Chapter 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Monsters</a>
+              <ul>
+                <li><a href="Working.html">Wolves</a></li>
+                <li><a href="Working.html">Bats</a></li>
+                <li><a href="Working.html">Ghouls</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+
+        <aside>
+            <a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd" id="Curse of Strahd Wiki">Wiki</a><br>
+            <a href="https://www.youtube.com/watch?v=RNQ9um_MGS4" id="Sergei Von Zarovic">Sergei Von Zarovich</a><br>
+            <a href="https://www.youtube.com/watch?v=uLpRctqGTWw" id="introduction">Into the Mists</a><br>
+            <a href="https://www.youtube.com/watch?v=dXTNvDeFdVU" id="Barovia">Barovia</a><br>
+            <a href="https://www.youtube.com/watch?v=7h13KAplpk4" id="Grim Lullaby">Grim Lullaby</a> <br>
+        </aside>
+
+        <section id="cxt">
+            <p>Destiny awaits those who venture into my lands.</p><p>Try your luck</p>
+            <div class="ftnBtn" id="ftnBtn1" title="fortune1">Fortune 1</div>
+            <div class="ftnBtn" id="ftnBtn2" title="fortune2">Fortune 2</div>
+            <div class="ftnBtn" id="ftnBtn3" title="fortune3">Fortune 3</div>
+            <div class="ftnBtn" id="ftnBtn4" title="fortune4">Fortune 4</div>
+            <div class="ftnBtn" id="ftnBtn5" title="fortune5">Fortune 5</div><br>
+
+            <div id="descFtn"></div>
+            <div id="photo"></div>
+            <br>
+            <div id="cardDesc"></div>
+            <br><br><br><br>
+            <div class="ftnBtn" id="gatesEnt" title="Start">Open</div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Jessie Higgins | &copy; D&D | WBG310</p>
+    </footer>
+
+</body>
+</html>

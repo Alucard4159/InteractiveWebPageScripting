@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Gaming D&D Site</title>
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+  <link href="smartmenus/sm-core-css.css" rel="stylesheet">
+  <link href="smartmenus/sm-red.css" rel="stylesheet">
+
+  <script src="includes/jquery.min.js"></script>
+  <script src="includes/jquery-1.11.0.min.js"></script>
+  <script src="includes/jquery-3.6.0.min.js"></script>
+  <script src="includes/jquery-ui.js"></script>
+  <script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+      $('.sm').smartmenus({  
+        showFunction : function($ul, complete) {
+            $ul.slideDown(250, complete);
+        }, 
+        hideFunction : function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+      }); // end smart menus
+			
+		});// end ready 
+		$('#woodsEnt').on('click', () =>{
+			window.location.href = "salichWoods.html";
+      });
+	});
+</script>
+<body>
+    <header>
+		<h1>Barovia</h1>
+	</header>
+    <nav>
+      <ul class="sm sm-blue">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">History</a>
+          <ul>
+            <li><a href="strahdInfo.html">Strahd</a></li>
+            <li><a href="vistaniInfo.html">Vistani</a></li>
+            <li><a href="Working.html">Barovians</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul>
+            <li><a href="gatesofBarovia.html">Gates</a></li>
+            <li><a href="Working.html">Woods</a></li>
+            <li><a href="Working.html">Chapter 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Monsters</a>
+          <ul>
+            <li><a href="Working.html">Wolves</a></li>
+            <li><a href="Working.html">Bats</a></li>
+            <li><a href="Working.html">Ghouls</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+
+        <aside>
+            <a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd" id="Curse of Strahd Wiki">Wiki</a><br>
+            <a href="https://www.youtube.com/watch?v=RNQ9um_MGS4" id="Sergei Von Zarovic">Sergei Von Zarovich</a><br>
+            <a href="https://www.youtube.com/watch?v=uLpRctqGTWw" id="introduction">Into the Mists</a><br>
+            <a href="https://www.youtube.com/watch?v=dXTNvDeFdVU" id="Barovia">Barovia</a><br>
+            <a href="https://www.youtube.com/watch?v=7h13KAplpk4" id="Grim Lullaby">Grim Lullaby</a> <br>
+        </aside>
+
+        <section id="cxt">
+          <img src="includes/Gates_of_barovia.png" width="620" height="208" style="float: right;" > 
+            <h2>Old Salich Road</h2>
+            <p>Black pools of water stand like dark mirros in and around muddy roadway. 
+                Giant trees loom on both sides of the road their branches clawing a the mist.
+            </p><br>
+            <h2>Gates of Barovia</h2>
+            <p>
+              The fog spills out of the forest to swallow up the road behind you.  Ahead, jutting from the impenetrable woods on both sides of the road, 
+              are high stone buttresses looming gray in the fog.  Huge iron gates hang on the stonework.  Dew clings with cold tenacity to the rusted bars.  
+            </p>
+            <br><br><br><br>
+            <div class="ftnBtn" id="woodsEnt" title="Proceed" style="padding-left: 15px;">Proceed</div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Jessie Higgins | &copy; D&D | WBG310</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barovia</title>
+	<link href="includes/style2.css" rel="stylesheet" type="text/css" />
+    <script src="includes/jquery-3.6.0.min.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+    $(function() {
+        $(window).on('load', () => {
+            setTimeout(function() {
+                $('#form1').fadeIn('slow'); 
+            }, 2000 );
+        })
+
+        $(document).ready(function() {
+            var sk1 = "";
+
+            $('#form1').submit(function () {
+                var fnme = $('#firstName').val();
+                var lnme = $('#lastName').val();
+
+                if ($('#hl').prop('checked'))
+                {
+                    sk1 = $('#hl').val();
+                }
+                if ($('#ft').prop('checked'))
+                {
+                    sk1 = $('#ft').val();
+                }
+                if ($('#rg').prop('checked'))
+                {
+                    sk1 = $('#rg').val();
+                }
+                if ($('#wk').prop('checked'))
+                {
+                    sk1 = $('#wk').val();
+                }
+
+                var newurl = "?fname=" + encodeURIComponent(fnme) + "&lname=" + encodeURIComponent(lnme) + "&skillType=" + encodeURIComponent(sk1);
+                window.location.href = newurl;       
+            })
+        })
+
+        
+        
+    });
+</script>
+<body>
+
+	<header>
+		<h1>Would you like to Barovia?</h1>
+	</header>
+	<nav>
+	</nav>
+
+	<div id="wrapper">
+		<section id="entryForm">
+            <form name="form1" action="barovia.html" id="form1" method="get">
+                <div id="fname2">
+                    <label for="fname" class="firstName">First Name</label>
+                    <input name="fname" type="text" id="firstName" size="48" required>
+                </div>
+                <div id="lname2">
+                    <label for="lname" class="lastName">Last Name</label>
+                    <input name="lname" type="text" id="lastName" size="48" required>
+                </div>
+                <div role="radiogroup" >
+                    <div>
+                        <input name="skillType" type="radio" id="hl" value="Healer" required>
+                        <label for="hl">Healer</label>
+                    </div>
+                    <div>
+                        <input name="skillType" type="radio" id="ft" value="Fighter" required>
+                        <label for="ft">Fighter</label>
+                    </div>
+                    <div>
+                        <input name="skillType" type="radio" id="rg" value="Rogue" required>
+                        <label for="rg">Rogue</label>
+                    </div>
+                    <div>
+                        <input name="skillType" type="radio" id="wk" value="Warlock" required>
+                        <label for="wk">Warlock</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" id="btnSubmit" value="Submit" >
+                    <input type="reset" id="btnClear" value="Clear Form" >
+                </div>
+                
+            </form>
+		</section>
+	</div>
+	<footer>
+		<p>Jessie Higgins | &copy; D&D | WBG310</p>
+	</footer>
+
+</body>
+</html>
