@@ -1,0 +1,108 @@
+*{margin:0 auto;padding:0;}
+body
+{
+    margin:0px auto;
+    width:1170px;
+    font: .9em Papyrus;
+    color:rgb(0, 0, 0);
+    background-image: url('Strahd-1.jpg'), url('Strahd-2.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: 20% 100%, 20% 100%;
+
+}
+
+header
+{
+    clear:both;
+    overflow:auto;
+    max-width:100%;
+    background:#820000;
+    padding:5px;
+}
+header h1 {
+	font: bold 2.5em Papyrus;
+	margin: 2% 2% 4% 2%; 
+}
+nav ul
+{
+	list-style: none;
+    display:block;
+    background:rgb(0, 0, 0);  
+    padding:10px;
+    margin:0px;
+}
+
+nav ul li
+{
+    display:inline;
+    list-style: none;
+}
+
+nav ul li a
+{
+    font: 1.1em Papyrus;
+    text-decoration:none;
+    width: 100%;
+    color:rgb(255, 0, 0);
+    padding:10px;
+    border-right:1px solid rgb(255, 0, 0);
+}
+
+nav ul li a:hover
+{
+    text-decoration:none;
+    color:rgb(255, 0, 0);
+    background:#001eff;
+    border:1px solid rgb(255, 0, 0);
+}
+
+#wrapper
+{
+    clear:both;
+    overflow:auto;
+    width:100%;
+}
+
+#entryForm
+{
+    width: 1150px;
+	min-height: 700px;
+	background:#ff0000;
+    background-image: url('bloodmoon.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 110%, 100% 100%;
+	float:left;
+	border: 10px solid rgb(0, 0, 0);
+    padding: 50px 0px 0px 0px;
+}
+
+#form1 {
+    width: 700px;
+	height: 200px;
+	background:#ff0000;
+    text-align: center;
+	border: 10px solid rgb(0, 0, 0);
+    display: none;
+    padding: 50px 0px 0px 0px;
+}
+
+
+
+footer
+{
+    background-color: #820000;
+    min-height: 50px;
+}
+
+footer p
+{
+    text-align:center;
+    color:rgb(255, 255, 255);
+    padding-top: 1.5%
+}
+table {
+	font-size: 90%;
+	padding-left: 10px;
+}
+.clear {clear: both;}
