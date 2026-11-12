@@ -11,27 +11,35 @@
 		$(document).ready(function() {
 			const getQueryParams = (url) => {
 				let qParams = {};
-				// create a binding tag to use a property called search
-				let anchor = document.createElement('a');
-				// assign the href URL of the anchor tag
-				anchor.href = url;
-				// search property returns URL query string
-				let qStrings = anchor.search.substring(1);
-				let params = qStrings.split('&');
-				for (let i = 0; i < params.length; i++) {
-					let pair = params[i].split('=');
-					qParams[pair[0]] = decodeURIComponent(pair[1]);
-				}
+				let qStrings = new URL(url, window.location.origin).searchParams;
+				qStrings.forEach((value, key) => {
+					if (!key) {
+						return;
+					}
+					qParams[key] = value;
+				});
 				return qParams;
 			};
 			queryString2 = getQueryParams(window.location.href);
-			var data = "<p>Hello " + queryString2["fname"] + " " + queryString2["lname"] + ",</p>";
-			data += "<br><p>I hear you are a renowned " + queryString2["skillType"] + ".</p>";
-			data += "<br><p>I have allowed you passage into my land, and know that I alone can release you from it.</p>";
-			data += "<br><p>Come see me at my castle if your reputation has any merit behind it.</p>";
-			data += "<br><p>The Dread Lord and Master, </p>";
-			data += "<br><p>Strahd von Barovich</p><br>";
-			$('#cxt').html(data);
+			var fname = queryString2.fname;
+			var lname = queryString2.lname || "";
+			var skillType = queryString2.skillType || "";
+			if (!fname) {
+				return;
+			}
+			var $cxt = $('#cxt').empty();
+			$cxt.append($('<p></p>').text('Hello ' + fname + ' ' + lname + ','));
+			$cxt.append('<br>');
+			$cxt.append($('<p></p>').text('I hear you are a renowned ' + skillType + '.'));
+			$cxt.append('<br>');
+			$cxt.append($('<p></p>').text('I have allowed you passage into my land, and know that I alone can release you from it.'));
+			$cxt.append('<br>');
+			$cxt.append($('<p></p>').text('Come see me at my castle if your reputation has any merit behind it.'));
+			$cxt.append('<br>');
+			$cxt.append($('<p></p>').text('The Dread Lord and Master,'));
+			$cxt.append('<br>');
+			$cxt.append($('<p></p>').text('Strahd von Barovich'));
+			$cxt.append('<br>');
 
 			
 		});
