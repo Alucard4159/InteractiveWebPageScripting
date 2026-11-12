@@ -1,1 +1,6 @@
 node_modules/
+.cursor/skills/
+.claude/skills/
+.kiro/skills/
+.context/.cursor-stop-followup.json
+.context/.cursor-file-edit-notices.json
