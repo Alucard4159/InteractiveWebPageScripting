@@ -1,108 +1,194 @@
-*{margin:0 auto;padding:0;}
-body
-{
-    margin:0px auto;
-    width:1170px;
-    font: .9em Papyrus;
-    color:rgb(0, 0, 0);
-    background-image: url('Strahd-1.jpg'), url('Strahd-2.jpg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: left, right;
-    background-size: 20% 100%, 20% 100%;
+@import url("tokens.css");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-header
-{
-    clear:both;
-    overflow:auto;
-    max-width:100%;
-    background:#820000;
-    padding:5px;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(180deg, rgba(12, 9, 8, 0.72), rgba(12, 9, 8, 0.88)),
+    url("bloodmoon.gif"),
+    url("Strahd-1.jpg"),
+    url("Strahd-2.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: center, center, left center, right center;
+  background-size: cover, cover, var(--side-art) auto, var(--side-art) auto;
+  background-attachment: fixed;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image:
+      linear-gradient(180deg, rgba(12, 9, 8, 0.78), rgba(12, 9, 8, 0.92)),
+      url("bloodmoon.gif");
+    background-size: cover, cover;
+  }
+}
+
+header {
+  padding: 1.25rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--blood-deep) 0%, rgba(12, 9, 8, 0.9) 100%);
+}
+
 header h1 {
-	font: bold 2.5em Papyrus;
-	margin: 2% 2% 4% 2%; 
-}
-nav ul
-{
-	list-style: none;
-    display:block;
-    background:rgb(0, 0, 0);  
-    padding:10px;
-    margin:0px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  letter-spacing: 0.06em;
+  color: var(--ink);
 }
 
-nav ul li
-{
-    display:inline;
-    list-style: none;
+nav {
+  min-height: 0.5rem;
 }
 
-nav ul li a
-{
-    font: 1.1em Papyrus;
-    text-decoration:none;
-    width: 100%;
-    color:rgb(255, 0, 0);
-    padding:10px;
-    border-right:1px solid rgb(255, 0, 0);
+#wrapper {
+  width: min(100% - 2rem, var(--max));
+  margin: 1.5rem auto 2.5rem;
+  flex: 1;
 }
 
-nav ul li a:hover
-{
-    text-decoration:none;
-    color:rgb(255, 0, 0);
-    background:#001eff;
-    border:1px solid rgb(255, 0, 0);
-}
-
-#wrapper
-{
-    clear:both;
-    overflow:auto;
-    width:100%;
-}
-
-#entryForm
-{
-    width: 1150px;
-	min-height: 700px;
-	background:#ff0000;
-    background-image: url('bloodmoon.gif');
-    background-repeat: no-repeat;
-    background-size: 100% 110%, 100% 100%;
-	float:left;
-	border: 10px solid rgb(0, 0, 0);
-    padding: 50px 0px 0px 0px;
+#entryForm {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background:
+    radial-gradient(ellipse at top, rgba(139, 26, 26, 0.4), transparent 55%),
+    linear-gradient(180deg, rgba(22, 16, 16, 0.92), rgba(12, 9, 8, 0.95));
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--blood);
+  min-height: min(70vh, 32rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #form1 {
-    width: 700px;
-	height: 200px;
-	background:#ff0000;
-    text-align: center;
-	border: 10px solid rgb(0, 0, 0);
-    display: none;
-    padding: 50px 0px 0px 0px;
+  width: min(100%, 28rem);
+  display: none;
+  padding: 1.75rem 1.5rem;
+  background: rgba(12, 9, 8, 0.88);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--edge);
+  text-align: left;
 }
 
-
-
-footer
-{
-    background-color: #820000;
-    min-height: 50px;
+#form1 label {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
 }
 
-footer p
-{
-    text-align:center;
-    color:rgb(255, 255, 255);
-    padding-top: 1.5%
+#form1 input[type="text"] {
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: #1a1212;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
 }
-table {
-	font-size: 90%;
-	padding-left: 10px;
+
+#form1 input[type="text"]:focus {
+  outline: 2px solid var(--edge);
+  outline-offset: 2px;
 }
-.clear {clear: both;}
+
+#form1 [role="radiogroup"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+#form1 [role="radiogroup"] > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#form1 [role="radiogroup"] label {
+  display: inline;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+#form1 #btnSubmit,
+#form1 #btnClear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  min-width: 7.5rem;
+  margin: 0.35rem 0.5rem 0 0;
+  padding: 0.75rem 1.4rem;
+  border: 1px solid var(--edge);
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--blood) 0%, var(--blood-deep) 100%);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#form1 #btnClear {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--ink-muted);
+}
+
+#form1 #btnSubmit:hover {
+  background: linear-gradient(180deg, var(--blood-glow) 0%, var(--blood) 100%);
+}
+
+#form1 #btnClear:hover {
+  border-color: var(--ash);
+  color: var(--ink);
+}
+
+#form1 #btnSubmit:focus-visible,
+#form1 #btnClear:focus-visible {
+  outline: 2px solid var(--edge);
+  outline-offset: 3px;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1.25rem;
+  text-align: center;
+  background: var(--blood-deep);
+  border-top: 1px solid var(--border);
+}
+
+footer p {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
