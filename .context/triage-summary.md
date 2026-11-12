@@ -1,17 +1,15 @@
 # Triage Session Summary
 Date: 2026-11-12
-Source: commit a595f63 (jQuery 4.0.0 swap) — Intro.html, barovia.html, related pages
-Total Findings: 4
+Source: qa-bug-hunt on interactive HTML/JS (see `.context/pack-configs/qa.md`)
+Total Findings: 3
 
-## To Fix (4)
-- [High] Intro submit goes to the wrong place
-  Fix: `event.preventDefault()`, then `window.location.href = "barovia.html" + newurl`. Applied.
-- [High] Barovia query parser fails open and fails closed
-  Fix: Use `URLSearchParams`, skip greeting when `fname` is missing, coalesce missing fields. Applied.
-- [Medium] Intro fade-in can miss `load`
-  Fix: If `document.readyState === "complete"`, start fade-in; otherwise bind `load`. Applied.
-- [Medium — Security] Reflected HTML injection on `barovia.html`
-  Fix: Build greeting paragraphs with `.text()` so query values are not parsed as HTML. Applied.
+## To Fix (3)
+- [High] Chapters → Woods opens the stub instead of the woods page
+  Fix: Point Woods nav to `salichWoods.html` on all shared nav pages. Applied.
+- [High] Intro name labels do not focus their inputs
+  Fix: Match `for` to `firstName` / `lastName`. Applied.
+- [Medium] Rapid fortune clicks on Destiny stack and tear down card images mid-animation
+  Fix: Stop fades, empty `#photo`, then fade in only the new card via `showFortune`. Applied.
 
 ## Deferred (0)
 

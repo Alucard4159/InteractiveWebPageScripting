@@ -64,96 +64,65 @@
 			$('#descFtn').stop().fadeTo(500, 0);
 		}); // end hover btn5\
 
+        var showFortune = function(imgPath, title, description) {
+            $('#photo img').stop(true, true);
+            $('#photo').empty();
+            $('#cardDesc').html(description);
+            var newImage = $('<img>').attr({
+                src: imgPath,
+                width: 250,
+                height: 400,
+                title: title,
+                style: 'float: right;'
+            }).hide();
+            $('#photo').append(newImage);
+            newImage.fadeIn(1000);
+        };
+
         $('#ftnBtn1').on('click', (evt) =>{
             evt.preventDefault();
-
-            var imgPath = "includes/tarroka deck/st3.png";
-            var oldImage = $('#photo img');
-            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
-
-            var data = "<p>I see  a kneeling woman-a rose of great beauty plucked too soon. The master of the marsh knows of whome I speak.</p>";
-            $('#cardDesc').html(data);
-
-            newImage.hide();
-            $('#photo').prepend(newImage);
-            newImage.fadeIn(1000);
-            oldImage.fadeOut(1000, function() {
-                $(this).remove();
-            }); // end fadeout
-        }); // end btn1 click
+            showFortune(
+                "includes/tarroka deck/st3.png",
+                "weapon location",
+                "<p>I see  a kneeling woman-a rose of great beauty plucked too soon. The master of the marsh knows of whome I speak.</p>"
+            );
+        });
 
         $('#ftnBtn2').on('click', (evt) =>{
             evt.preventDefault();
-
-            var imgPath = "includes/tarroka deck/gl8.png";
-            var oldImage = $('#photo img');
-            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
-
-            var data = "<p>What you seek lies in a pile of treasure, beyond a set of amber doors.</p>";
-            $('#cardDesc').html(data);
-
-            newImage.hide();
-            $('#photo').prepend(newImage);
-            newImage.fadeIn(1000);
-            oldImage.fadeOut(1000, function() {
-                $(this).remove();
-            }); // end fadeout
-        }); // end btn2 click
-
+            showFortune(
+                "includes/tarroka deck/gl8.png",
+                "weapon location",
+                "<p>What you seek lies in a pile of treasure, beyond a set of amber doors.</p>"
+            );
+        });
 
         $('#ftnBtn3').on('click', (evt) =>{
             evt.preventDefault();
+            showFortune(
+                "includes/tarroka deck/sw1.png",
+                "weapon location",
+                "<p>The treasure lies in a dragons's house, in hands once clean and now corrupted.</p>"
+            );
+        });
 
-            var imgPath = "includes/tarroka deck/sw1.png";
-            var oldImage = $('#photo img');
-            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="weapon location">');
-
-            var data = "<p>The treasure lies in a dragons's house, in hands once clean and now corrupted.</p>";
-            $('#cardDesc').html(data);
-
-            newImage.hide();
-            $('#photo').prepend(newImage);
-            newImage.fadeIn(1000);
-            oldImage.fadeOut(1000, function() {
-                $(this).remove();
-            }); // end fadeout
-        }); // end btn3 click
-
-		$('#ftnBtn4').on('click', (evt) =>{
+        $('#ftnBtn4').on('click', (evt) =>{
             evt.preventDefault();
+            showFortune(
+                "includes/tarroka deck/cr9.png",
+                "Strahds Enemy",
+                "<p>A werewolf holds a secret hatred for you enemy.  Use her hatred to your advantage.</p>"
+            );
+        });
 
-            var imgPath = "includes/tarroka deck/cr9.png";
-            var oldImage = $('#photo img');
-            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="Strahds Enemy">');
-
-            var data = "<p>A werewolf holds a secret hatred for you enemy.  Use her hatred to your advantage.</p>";
-            $('#cardDesc').html(data);
-
-            newImage.hide();
-            $('#photo').prepend(newImage);
-            newImage.fadeIn(1000);
-            oldImage.fadeOut(1000, function() {
-                $(this).remove();
-            }); // end fadeout
-      }); //end btn4 click
-
-      $('#ftnBtn5').on('click', (evt) =>{
+        $('#ftnBtn5').on('click', (evt) =>{
             evt.preventDefault();
-
-            var imgPath = "includes/tarroka deck/cr7.png";
-            var oldImage = $('#photo img');
-            var newImage = $('<img src="' + imgPath + '"width="250" height="400" style="float: right;" title="Strahds location">');
-
-            var data = "<p>I see a dark figure on a balcony, looking down upon this tortured land with a twisted smile.</p>";
-            $('#cardDesc').html(data);
-
-            newImage.hide();
-            $('#photo').prepend(newImage);
-            newImage.fadeIn(1000);
-            oldImage.fadeOut(1000, function() {
-                $(this).remove();
-            }); // end fadeout
-      }); // end btn5 click
+            showFortune(
+                "includes/tarroka deck/cr7.png",
+                "Strahds location",
+                "<p>I see a dark figure on a balcony, looking down upon this tortured land with a twisted smile.</p>"
+            );
+        });
 
       $('#gatesEnt').on('click', () =>{
 			window.location.href = "gatesofBarovia.html";
@@ -179,7 +148,7 @@
             <li><a href="#">Chapters</a>
                 <ul>
                     <li><a href="gatesofBarovia.html">Gates</a></li>
-                    <li><a href="Working.html">Woods</a></li>
+                    <li><a href="salichWoods.html">Woods</a></li>
                     <li><a href="Working.html">Chapter 3</a></li>
                 </ul>
             </li>
