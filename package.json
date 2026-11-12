@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "interactive-web-page-scripting",
+  "version": "1.0.0",
+  "description": "Static Barovia site. Pages load includes/jquery.min.js (jQuery 4.0.0). SmartMenus stays at the vendored 0.9.5 build because the red nav theme is a customized 2014 stylesheet and 1.2.1 is not a drop-in.",
+  "dependencies": {
+    "jquery": "4.0.0"
+  }
+}
