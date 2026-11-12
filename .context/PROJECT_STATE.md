@@ -11,8 +11,7 @@ Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQue
 ## Current status
 
 - Phase: stabilization
-- Overall: green — QA triage fixes landed; gothic rebuild + side-portrait bleed shipped to `main` (`de87d20`) / GitHub Pages
-- Note: Cursor context bootstrap (`.context/` handoff fill, `.cursor/`, `skills/`, hooks) is installed locally but **not committed yet**
+- Overall: green — QA triage fixes landed; gothic rebuild + side-portrait bleed (`de87d20`) and Cursor context bootstrap (`9275278`) on `main` / GitHub Pages
 
 ## Active priorities
 
