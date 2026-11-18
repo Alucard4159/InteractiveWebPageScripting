@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chapter 3 — Village of Barovia</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+	<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+	<link href="smartmenus/sm-red.css" rel="stylesheet">
+
+	<script src="includes/jquery.min.js"></script>
+	<script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+			$('.sm').smartmenus({
+				showFunction: function($ul, complete) {
+					$ul.slideDown(250, complete);
+				},
+				hideFunction: function($ul, complete) {
+					$ul.slideUp(250, complete);
+				}
+			});
+		});
+	});
+</script>
+<body>
+	<header>
+		<h1>Barovia</h1>
+	</header>
+	<nav>
+		<ul class="sm sm-blue">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">History</a>
+				<ul>
+					<li><a href="strahdInfo.html">Strahd</a></li>
+					<li><a href="vistaniInfo.html">Vistani</a></li>
+					<li><a href="baroviansInfo.html">Barovians</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Chapters</a>
+				<ul>
+					<li><a href="gatesofBarovia.html">Gates</a></li>
+					<li><a href="salichWoods.html">Woods</a></li>
+					<li><a href="chapter3.html">Chapter 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Monsters</a>
+				<ul>
+					<li><a href="Working.html">Wolves</a></li>
+					<li><a href="Working.html">Bats</a></li>
+					<li><a href="Working.html">Ghouls</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="wrapper">
+		<aside>
+			<a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd">Wiki</a>
+			<a href="https://www.youtube.com/watch?v=RNQ9um_MGS4">Sergei Von Zarovich</a>
+			<a href="https://www.youtube.com/watch?v=uLpRctqGTWw">Into the Mists</a>
+			<a href="https://www.youtube.com/watch?v=dXTNvDeFdVU">Barovia</a>
+			<a href="https://www.youtube.com/watch?v=7h13KAplpk4">Grim Lullaby</a>
+		</aside>
+
+		<section id="cxt">
+			<h2>Chapter 3 — Village of Barovia</h2>
+			<p>Past the gates and the Svalich Woods, the road drops into a hollow where the village of Barovia huddles under the shadow of Castle Ravenloft. Chimneys trickle thin smoke. Shutters stay barred long after dawn. Strangers are noticed — and seldom welcomed.</p>
+			<p>This is the first true settlement most travelers reach: a place of fear, rumor, and thin hospitality. The Burgomaster’s mansion, the church, and a handful of shops cling to the muddy lanes while the castle watches from the cliffs above.</p>
+			<h2>Mood of the village</h2>
+			<p>Barovians here speak softly and lock early. Many have given up hoping for rescue; others still light a candle for the Morninglord and wait for a miracle that never comes. Adventurers who swagger through the square will find closed doors. Those who offer help — or at least courtesy — may learn who still holds a scrap of courage.</p>
+			<h2>What to explore</h2>
+			<p>Useful stops for a first visit include the inn and tavern for news, the church for local faith and burial customs, and the Burgomaster’s household if the party seeks authority — or trouble. Side lanes hide poorer homes, a cemetery at the edge of town, and paths that climb toward the castle’s approach.</p>
+			<p>Do not treat the village as a safe hub. Wolves and worse still hunt the outskirts, and Strahd’s attention reaches every rooftop. Leave when you must, return when you dare — but understand that once you have been seen here, the valley already knows your names.</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>Jessie Higgins | &copy; D&D | WBG310</p>
+	</footer>
+  <script src="includes/side-portraits.js"></script>
+</body>
+</html>

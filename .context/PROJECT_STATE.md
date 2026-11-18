@@ -12,11 +12,12 @@ Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQue
 
 - Phase: stabilization
 - Overall: green — QA triage fixes landed; gothic rebuild + side-portrait bleed (`de87d20`) and Cursor context bootstrap (`9275278`) on `main` / GitHub Pages
+- Local (uncommitted): Vistani + Barovians lore; `chapter3.html` (Village of Barovia); related nav retargeted
 
 ## Active priorities
 
 - P1: Keep Pages deploy at repo root working (`.nojekyll` present)
-- P2: Fill stub pages (`Working.html` topics) when content is ready
+- P2: Fill remaining `Working.html` stubs (Wolves / Bats / Ghouls) when content is ready
 - P3: Optional portrait crop/width tweaks only if visual feedback asks
 
 ## Environment notes (safe only)
@@ -34,5 +35,5 @@ Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQue
 
 ## Risks / blockers
 
-- Sparse stub pages (Vistani/Barovians/Monsters) look empty beside side art — content debt, not layout debt
+- Remaining stub pages (Monsters) still park on `Working.html` — content debt, not layout debt
 - SmartMenus 0.9.5 kept intentionally (no npm runtime upgrade path in this stack)

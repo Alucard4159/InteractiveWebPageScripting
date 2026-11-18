@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Barovians</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+	<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+	<link href="smartmenus/sm-red.css" rel="stylesheet">
+
+	<script src="includes/jquery.min.js"></script>
+	<script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+			$('.sm').smartmenus({
+				showFunction: function($ul, complete) {
+					$ul.slideDown(250, complete);
+				},
+				hideFunction: function($ul, complete) {
+					$ul.slideUp(250, complete);
+				}
+			});
+		});
+	});
+</script>
+<body>
+	<header>
+		<h1>Barovia</h1>
+	</header>
+	<nav>
+		<ul class="sm sm-blue">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">History</a>
+				<ul>
+					<li><a href="strahdInfo.html">Strahd</a></li>
+					<li><a href="vistaniInfo.html">Vistani</a></li>
+					<li><a href="baroviansInfo.html">Barovians</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Chapters</a>
+				<ul>
+					<li><a href="gatesofBarovia.html">Gates</a></li>
+					<li><a href="salichWoods.html">Woods</a></li>
+					<li><a href="chapter3.html">Chapter 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Monsters</a>
+				<ul>
+					<li><a href="Working.html">Wolves</a></li>
+					<li><a href="Working.html">Bats</a></li>
+					<li><a href="Working.html">Ghouls</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="wrapper">
+		<aside>
+			<a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd">Wiki</a>
+			<a href="https://www.youtube.com/watch?v=RNQ9um_MGS4">Sergei Von Zarovich</a>
+			<a href="https://www.youtube.com/watch?v=uLpRctqGTWw">Into the Mists</a>
+			<a href="https://www.youtube.com/watch?v=dXTNvDeFdVU">Barovia</a>
+			<a href="https://www.youtube.com/watch?v=7h13KAplpk4">Grim Lullaby</a>
+		</aside>
+
+		<section id="cxt">
+			<h2>Barovians</h2>
+			<p>Barovians are the settled folk of the valley — farmers, millers, innkeepers, and burgomasters who live under a sky that rarely clears. Generations have grown up knowing that wolves own the woods at night, that the castle on the crag watches everything, and that strangers who arrive through the Mists seldom leave the same way they came.</p>
+			<p>They are not one mood. In the village of Barovia, despair hangs heavy and doors close early. In Vallaki, the burgomaster insists on forced cheer and festival banners while fear still rules the alleys. Elsewhere, isolated farms and roadside inns cling to hard routines: tend the livestock, bar the shutters, never invite the night inside.</p>
+			<h2>Faith and superstition</h2>
+			<p>Many Barovians once looked to the Morninglord for light and mercy. Shrines still stand, but faith is thin where hope has failed. Charms against the undead, garlic hung in windows, and muttered prayers at dusk are as common as any formal rite. Outsiders who mock those habits are marked as fools — or as bait.</p>
+			<h2>Living with Strahd</h2>
+			<p>Everyone knows the Devil Strahd rules Barovia, whether they say his name aloud or not. Some families have struck quiet bargains; most simply endure. A Barovian’s first question about adventurers is rarely “How can we help?” It is “Will your fight make the wolves hungrier tonight?”</p>
+			<p>Earn their trust slowly. Protect a harvest, break a local terror, or prove you are not another of Strahd’s games, and a closed door may open. Fail that test, and the valley’s people will watch you walk toward Castle Ravenloft alone — and call it wisdom.</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>Jessie Higgins | &copy; D&D | WBG310</p>
+	</footer>
+  <script src="includes/side-portraits.js"></script>
+</body>
+</html>

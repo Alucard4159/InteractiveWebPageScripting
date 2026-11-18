@@ -2,6 +2,18 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
+## 2026-11-17 — Chapter 3 = Village of Barovia page
+
+- **Decision:** Add `chapter3.html` as a spoiler-scrubbed Village of Barovia overview; point Chapters → Chapter 3 there. Do not paste live-table campaign spoilers from DM notes.
+- **Why:** Next beat after Gates/Woods in the course site; campaign chat is useful for setting texture, not for public WBG310 copy.
+- **Alternatives rejected:** Leaving Chapter 3 on `Working.html`; writing Vallaki/Abbey spoilers into the course page.
+
+## 2026-11-17 — Barovians get their own page; keep `Working.html` as multi-stub
+
+- **Decision:** Add `baroviansInfo.html` and retarget History → Barovians there; leave `Working.html` for remaining unfinished topics (now Monsters only).
+- **Why:** Barovians is a finished History topic; overwriting `Working.html` would still leave other stubs pointing at Barovians content. A dedicated page matches Strahd/Vistani and keeps the stub honest.
+- **Alternatives rejected:** Replacing `Working.html` body with Barovians copy; leaving Barovians on the stub until all topics are ready.
+
 ## 2026-11-12 — Side portraits option B + underlap bleed
 
 - **Decision:** Real fixed `<img>` columns (`side-portraits.js`) instead of body background art; portraits underlap content gutters with CSS masks; content panels remain opaque.

@@ -8,7 +8,7 @@ Records the version this project last reconciled against, per plugin it uses —
 
 | Plugin | Synced version | Synced date |
 |---|---|---|
-| qa | 1.0.2 | 2026-11-10 |
+| qa | 1.0.3 | 2026-11-15 |
 
 ## Maintenance
 
