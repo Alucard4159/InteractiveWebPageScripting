@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wolves of Barovia</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="includes/style.css" rel="stylesheet" type="text/css" />
+	<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+	<link href="smartmenus/sm-red.css" rel="stylesheet">
+
+	<script src="includes/jquery.min.js"></script>
+	<script src="smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+			$('.sm').smartmenus({
+				showFunction: function($ul, complete) {
+					$ul.slideDown(250, complete);
+				},
+				hideFunction: function($ul, complete) {
+					$ul.slideUp(250, complete);
+				}
+			});
+		});
+	});
+</script>
+<body>
+	<header>
+		<h1>Barovia</h1>
+	</header>
+	<nav>
+		<ul class="sm sm-blue">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">History</a>
+				<ul>
+					<li><a href="strahdInfo.html">Strahd</a></li>
+					<li><a href="vistaniInfo.html">Vistani</a></li>
+					<li><a href="baroviansInfo.html">Barovians</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Chapters</a>
+				<ul>
+					<li><a href="gatesofBarovia.html">Gates</a></li>
+					<li><a href="salichWoods.html">Woods</a></li>
+					<li><a href="chapter3.html">Chapter 3</a></li>
+					<li><a href="vallaki.html">Vallaki</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Monsters</a>
+				<ul>
+					<li><a href="wolves.html">Wolves</a></li>
+					<li><a href="bats.html">Bats</a></li>
+					<li><a href="ghouls.html">Ghouls</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="wrapper">
+		<aside>
+			<a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd">Wiki</a>
+			<a href="https://www.youtube.com/watch?v=RNQ9um_MGS4">Sergei Von Zarovich</a>
+			<a href="https://www.youtube.com/watch?v=uLpRctqGTWw">Into the Mists</a>
+			<a href="https://www.youtube.com/watch?v=dXTNvDeFdVU">Barovia</a>
+			<a href="https://www.youtube.com/watch?v=7h13KAplpk4">Grim Lullaby</a>
+		</aside>
+
+		<section id="cxt">
+			<h2>Wolves</h2>
+			<p>Wolves haunt the Svalich Woods and the roads that cut through them. Travelers hear them before they see them — a chorus in the mist that seems to move when the fog moves. In Barovia, a wolf pack is rarely only hungry animals. Many serve as eyes and teeth for Strahd, driven to harry the lost and cut off escape.</p>
+			<p>Barovians shutter early for a reason. Lone riders and small parties on the Old Svalich Road learn quickly that running blindly into the trees is how the valley feeds itself.</p>
+			<h2>How they hunt</h2>
+			<p>Packs prefer to isolate stragglers, force horses to panic, and drive prey toward denser timber or open ground where larger threats wait. Daylight does not make the woods safe; it only makes the silence louder. Adventurers who treat every howl as “just wolves” often discover the truth with blood on the snow.</p>
+			<h2>Facing them</h2>
+			<p>Fire, tight formation, and refusing to scatter buy time. Mercy is rare — a wounded pack may withdraw, but the land remembers scent and fear. If the wolves break off without a kill, ask what they were herding you toward.</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>Jessie Higgins | &copy; D&D | WBG310</p>
+	</footer>
+  <script src="includes/side-portraits.js"></script>
+</body>
+</html>

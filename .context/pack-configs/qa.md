@@ -5,7 +5,8 @@ Static Curse of Strahd site. Prefer these paths unless the user narrows further:
 
 - `Intro.html`, `barovia.html`, `Destiny.html`
 - `home.html`, `gatesofBarovia.html`, `salichWoods.html`
-- `strahdInfo.html`, `vistaniInfo.html`, `baroviansInfo.html`, `chapter3.html`, `Working.html`
+- `strahdInfo.html`, `vistaniInfo.html`, `baroviansInfo.html`, `chapter3.html`, `vallaki.html`
+- `wolves.html`, `bats.html`, `ghouls.html`, `Working.html` (retired stub)
 - `includes/site.js`, `includes/style.css`, `includes/style2.css`
 - Shared nav markup duplicated across the HTML pages above
 - Vendored libs only when a finding depends on them: `includes/jquery.min.js`, `smartmenus/`

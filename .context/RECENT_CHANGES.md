@@ -2,11 +2,17 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
+## 2026-11-18
+
+- Added `vallaki.html` (spoiler-scrubbed town overview); Chapters → Vallaki nav link on all menu pages.
+- Added `wolves.html`, `bats.html`, `ghouls.html`; Monsters nav retargeted off `Working.html`; stub page marked retired.
+
 ## 2026-11-17
 
-- Added `chapter3.html` (Village of Barovia, spoiler-scrubbed); Chapters → Chapter 3 nav retargeted off `Working.html` (Monsters still stub).
+- Added `chapter3.html` (Village of Barovia, spoiler-scrubbed); Chapters → Chapter 3 nav retargeted off `Working.html`.
 - Filled `vistaniInfo.html` with Vistani lore; added `baroviansInfo.html` and retargeted History → Barovians nav off `Working.html`.
 - Noted live-table campaign chat [Curse of Strahd campaign help](5b6e581a-21df-4cfe-8652-47b0179e4437) as optional setting source — keep table spoilers off the public site.
+- Committed the above as `87119de` on `main`.
 
 ## 2026-11-12
 

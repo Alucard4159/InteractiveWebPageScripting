@@ -2,6 +2,18 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
+## 2026-11-18 — Vallaki as Chapters entry (not “Chapter 4”)
+
+- **Decision:** Add `vallaki.html` labeled **Vallaki** in Chapters, not “Chapter 4”.
+- **Why:** Course nav already mixes named locations (Gates/Woods) with “Chapter 3”; Vallaki is a place name students recognize. Avoid implying a strict module chapter index that would pull in Abbey spoilers next.
+- **Alternatives rejected:** Naming it Chapter 4; stuffing Vallaki into `chapter3.html`.
+
+## 2026-11-18 — Monsters get dedicated pages; retire `Working.html` from nav
+
+- **Decision:** Add `wolves.html`, `bats.html`, `ghouls.html` with course-safe lore; point Monsters menu there; keep `Working.html` as an unlinked “coming soon” for old bookmarks.
+- **Why:** Same pattern as Barovians/Chapter 3 — finished topics should not share one stub URL. Empty menus beside side art were the remaining content debt.
+- **Alternatives rejected:** Leaving monsters on `Working.html`; deleting `Working.html` (breaks any saved links).
+
 ## 2026-11-17 — Chapter 3 = Village of Barovia page
 
 - **Decision:** Add `chapter3.html` as a spoiler-scrubbed Village of Barovia overview; point Chapters → Chapter 3 there. Do not paste live-table campaign spoilers from DM notes.
@@ -10,7 +22,7 @@
 
 ## 2026-11-17 — Barovians get their own page; keep `Working.html` as multi-stub
 
-- **Decision:** Add `baroviansInfo.html` and retarget History → Barovians there; leave `Working.html` for remaining unfinished topics (now Monsters only).
+- **Decision:** Add `baroviansInfo.html` and retarget History → Barovians there (same dedicated-page pattern later used for Chapter 3 and Monsters).
 - **Why:** Barovians is a finished History topic; overwriting `Working.html` would still leave other stubs pointing at Barovians content. A dedicated page matches Strahd/Vistani and keeps the stub honest.
 - **Alternatives rejected:** Replacing `Working.html` body with Barovians copy; leaving Barovians on the stub until all topics are ready.
 

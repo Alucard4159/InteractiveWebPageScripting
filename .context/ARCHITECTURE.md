@@ -19,9 +19,10 @@ Last updated: 2026-11-12
 | `home.html` | Brand hero + map CTA → Intro |
 | `Intro.html` | Name entry → Destiny |
 | `Destiny.html` | Tarroka fortune UI |
-| `gatesofBarovia.html`, `salichWoods.html`, `chapter3.html`, `barovia.html` | Chapter / setting pages |
+| `gatesofBarovia.html`, `salichWoods.html`, `chapter3.html`, `vallaki.html`, `barovia.html` | Chapter / setting pages |
 | `strahdInfo.html`, `vistaniInfo.html`, `baroviansInfo.html` | History topics |
-| `Working.html` | Intentional stub for unfinished nav targets (Monsters only) |
+| `wolves.html`, `bats.html`, `ghouls.html` | Monster topics |
+| `Working.html` | Retired menu stub (kept for old links; not in nav) |
 
 ## Layout
 
