@@ -2,6 +2,12 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
+## 2026-11-19 — Folder restructure + root `index.html`
+
+- **Decision:** Serve entry as `index.html`; group pages under `chapters/`, `history/`, `monsters/`, `flow/`; keep `includes/` + `smartmenus/` at repo root. Keep only `home.html` as a redirect to `index.html` (LinkedIn link); delete other old root HTML redirect stubs.
+- **Why:** Pages `/` needs `index.html`; flat root was unreadable. Full stub set was noise in the explorer; user confirmed no saved links except LinkedIn → `home.html`.
+- **Alternatives rejected:** Keeping every old filename as a redirect; deleting `home.html` too; moving assets into each folder.
+
 ## 2026-11-18 — Vallaki as Chapters entry (not “Chapter 4”)
 
 - **Decision:** Add `vallaki.html` labeled **Vallaki** in Chapters, not “Chapter 4”.

@@ -2,10 +2,17 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
+## 2026-11-19
+
+- Committed folder restructure + index.html entry to main.
+- Added root `index.html` (Pages entry) and moved pages into `chapters/`, `history/`, `monsters/`, `flow/`, `misc/`; `side-portraits.js` resolves assets from its script URL. Restructure script: `scripts/restructure_site.py`.
+- Deleted legacy root redirect stubs except `home.html` → `index.html` (LinkedIn).
+
 ## 2026-11-18
 
 - Added `vallaki.html` (spoiler-scrubbed town overview); Chapters → Vallaki nav link on all menu pages.
 - Added `wolves.html`, `bats.html`, `ghouls.html`; Monsters nav retargeted off `Working.html`; stub page marked retired.
+- Committed the monsters + Vallaki bundle as `31a7791` on `main`.
 
 ## 2026-11-17
 

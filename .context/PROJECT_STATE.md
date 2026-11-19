@@ -2,21 +2,21 @@
 
 > **Context Safety:** Redact sensitive values. No secrets in this file.
 
-Last updated: 2026-11-18
+Last updated: 2026-11-19
 
 ## What this project does
 
-Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQuery 4.0.0 + SmartMenus 0.9.5. Gothic visual system (Cinzel / Source Serif 4 tokens), Tarroka fortune flow (`Intro` → `Destiny`), and underlapping Strahd side-portrait columns on desktop.
+Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQuery 4.0.0 + SmartMenus 0.9.5. Gothic visual system (Cinzel / Source Serif 4 tokens), Tarroka fortune flow (`flow/intro` → `flow/destiny`), and underlapping Strahd side-portrait columns on desktop.
 
 ## Current status
 
 - Phase: stabilization
-- Overall: green — visual/bootstrap + lore on `main` (`87119de`); monsters + Vallaki local pending commit
-- Note: `wolves`/`bats`/`ghouls` + `vallaki.html` added; `Working.html` retired from menus
+- Overall: green on content; **local uncommitted** folder restructure (`index.html` + `chapters/` / `history/` / `monsters/` / `flow/`) pending push
+- Prior content commits on `main`: `87119de`, `31a7791`
 
 ## Active priorities
 
-- P1: Keep Pages deploy at repo root working (`.nojekyll` present)
+- P1: Commit/push restructure so Pages `/` serves `index.html`
 - P2: Optional portrait polish if visual feedback asks
 - P3: Optional Krezk/Abbey overviews (spoiler-scrubbed)
 
@@ -30,9 +30,10 @@ Static Curse of Strahd / Barovia course site: multi-page HTML with vendored jQue
 
 | Env | URL / path | Notes |
 |---|---|---|
-| Local | `http://127.0.0.1:<port>/home.html` | Ad-hoc Python http.server |
-| GitHub Pages | repo Pages URL | Source = `/` (not `/docs`); `.nojekyll` required |
+| Local | `http://127.0.0.1:<port>/` or `/index.html` | Ad-hoc Python http.server |
+| GitHub Pages | repo Pages URL | Source = `/`; entry = `index.html`; `.nojekyll` required |
 
 ## Risks / blockers
 
 - SmartMenus 0.9.5 kept intentionally (no npm runtime upgrade path in this stack)
+- `home.html` is LinkedIn redirect-only — edit `index.html` for home content

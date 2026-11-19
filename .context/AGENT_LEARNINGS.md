@@ -16,4 +16,4 @@
 
 ## QA scope
 
-- Prefer `.context/pack-configs/qa.md` paths; `Working.html` stubs are intentional unless a nav label points at the stub while a real page exists.
+- Prefer `.context/pack-configs/qa.md` paths; `misc/working.html` is a retired unlinked stub — don’t file “unfinished page” unless nav still points at it.

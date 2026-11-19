@@ -4,7 +4,7 @@
 
 ## Now
 
-- [ ] (none blocking — site green on Pages)
+- [ ] Commit/push folder restructure + root `index.html`
 
 ## Next
 
@@ -17,12 +17,13 @@
 
 ## Done recently (optional short list)
 
-- [x] Monsters + Vallaki committed to main
+- [x] Root `index.html` + folder restructure (local); only `home.html` redirect kept for LinkedIn
+- [x] Monsters + Vallaki committed to `main` (`31a7791`)
 - [x] Vallaki page + Chapters nav link
-- [x] Monsters → `wolves.html`, `bats.html`, `ghouls.html`; nav retargeted
-- [x] Chapter 3 → `chapter3.html` (Village of Barovia); nav retargeted
-- [x] Vistani + Barovians lore pages (`vistaniInfo.html`, `baroviansInfo.html`)
+- [x] Monsters → wolves/bats/ghouls pages; nav retargeted
+- [x] Chapter 3 → Village of Barovia; nav retargeted
+- [x] Vistani + Barovians lore pages
 - [x] Side-portrait B + underlap bleed shipped
-- [x] QA triage trio fixed (Woods nav, Intro labels, Destiny fades)
+- [x] QA triage trio fixed
 - [x] GitHub Pages root + `.nojekyll`
 - [x] Context bootstrap (Cursor)

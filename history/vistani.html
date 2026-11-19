@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vistani</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="../includes/style.css" rel="stylesheet" type="text/css" />
+	<link href="../smartmenus/sm-core-css.css" rel="stylesheet">
+	<link href="../smartmenus/sm-red.css" rel="stylesheet">
+
+	<script src="../includes/jquery.min.js"></script>
+	<script src="../smartmenus/jquery.smartmenus.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function() {
+			$('.sm').smartmenus({
+				showFunction: function($ul, complete) {
+					$ul.slideDown(250, complete);
+				},
+				hideFunction: function($ul, complete) {
+					$ul.slideUp(250, complete);
+				}
+			});
+		});
+	});
+</script>
+<body>
+	<header>
+		<h1>Barovia</h1>
+	</header>
+	<nav>
+		<ul class="sm sm-blue">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">History</a>
+				<ul>
+					<li><a href="../history/strahd.html">Strahd</a></li>
+					<li><a href="../history/vistani.html">Vistani</a></li>
+					<li><a href="../history/barovians.html">Barovians</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Chapters</a>
+				<ul>
+					<li><a href="../chapters/gates.html">Gates</a></li>
+					<li><a href="../chapters/woods.html">Woods</a></li>
+					<li><a href="../chapters/chapter3.html">Chapter 3</a></li>
+					<li><a href="../chapters/vallaki.html">Vallaki</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Monsters</a>
+				<ul>
+					<li><a href="../monsters/wolves.html">Wolves</a></li>
+					<li><a href="../monsters/bats.html">Bats</a></li>
+					<li><a href="../monsters/ghouls.html">Ghouls</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="wrapper">
+		<aside>
+			<a href="https://forgottenrealms.fandom.com/wiki/Curse_of_Strahd">Wiki</a>
+			<a href="https://www.youtube.com/watch?v=RNQ9um_MGS4">Sergei Von Zarovich</a>
+			<a href="https://www.youtube.com/watch?v=uLpRctqGTWw">Into the Mists</a>
+			<a href="https://www.youtube.com/watch?v=dXTNvDeFdVU">Barovia</a>
+			<a href="https://www.youtube.com/watch?v=7h13KAplpk4">Grim Lullaby</a>
+		</aside>
+
+		<section id="cxt">
+			<h2>Vistani</h2>
+			<p>The Vistani are a wandering people who travel the Domains of Dread in brightly painted wagons called <em>vardos</em>. Unlike the Barovians trapped in Strahd’s valley, many Vistani can pass through the Mists — a freedom that makes them both valuable guides and objects of deep suspicion.</p>
+			<p>They are not a single tribe with one voice. Camps differ in custom, fortune-telling craft, and how closely they deal with the Devil Strahd. Some caravans trade openly with villages; others keep to the roads and clearings of the Svalich Woods. What they share is a reputation for reading fate in cards, crystal, and song — and for knowing more about Barovia’s curses than they usually admit.</p>
+			<h2>Fortune and the Tarokka</h2>
+			<p>Vistani seers often use a Tarokka deck to cast fortunes. In Barovia, such readings are never idle entertainment: a true reading can name the heroes’ role in Strahd’s long game, point toward relics of hope, or warn of allies who will betray them. Travelers who scorn a camp’s hospitality may find the roads darker afterward.</p>
+			<h2>Strahd’s arrangement</h2>
+			<p>Strahd allows certain Vistani to come and go where others cannot. That privilege is not kindness. It is leverage — information, messengers, and eyes along the Old Svalich Road. Barovians who have suffered under the night often blame every Vistani for the bargains of a few, so camps near Vallaki or the village of Barovia walk a careful line between outsider and insider.</p>
+			<p>For adventurers, the lesson is simple: treat a Vistani camp as a people, not a prop. Earn trust, pay fairly, and listen when a seer lays the cards — or leave before the fires die and the wagons roll on into the fog.</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>Jessie Higgins | &copy; D&D | WBG310</p>
+	</footer>
+  <script src="../includes/side-portraits.js"></script>
+</body>
+</html>

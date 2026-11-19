@@ -14,15 +14,17 @@ A lookup layer across the `.context/` corpus — which file, which heading, one-
 | File | Section / heading | One-line summary | Last confirmed |
 |------|--------------------|-------------------|-----------------|
 | PROJECT_STATE.md | What this project does | Static Barovia HTML/jQuery course site | 2026-11-12 |
-| PROJECT_STATE.md | Current status | Lore on `87119de`; monsters + Vallaki pending commit | 2026-11-18 |
-| PROJECT_STATE.md | Deployment Environments | Local http.server + GitHub Pages root | 2026-11-12 |
+| PROJECT_STATE.md | Current status | Restructure local; content on `main` (`31a7791`) | 2026-11-19 |
+| PROJECT_STATE.md | Deployment Environments | Pages `/` → `index.html` | 2026-11-19 |
+| ARCHITECTURE.md | Directory layout | folders + `home.html`→`index` only | 2026-11-19 |
 | ARCHITECTURE.md | Stack / Layout | tokens + side-portraits underlap; Pages `/` | 2026-11-12 |
-| ARCHITECTURE.md | Page map | History + Chapter 3 + Vallaki + monsters; Working retired | 2026-11-18 |
 | DECISIONS.md | Barovians own page | Dedicated History page (pattern for later topics) | 2026-11-17 |
 | DECISIONS.md | Side portraits B + bleed | Fixed imgs + mask underlap | 2026-11-12 |
 | DECISIONS.md | Pages root | Not `/docs`; `.nojekyll` | 2026-11-12 |
-| TODO.md | Next | Commit pending content; optional Krezk/Abbey | 2026-11-18 |
-| RECENT_CHANGES.md | 2026-11-18 | Monsters + Vallaki pages; Working retired | 2026-11-18 |
+| TODO.md | Now | Commit/push restructure | 2026-11-19 |
+| RECENT_CHANGES.md | 2026-11-19 | index + folders; drop legacy stubs | 2026-11-19 |
+| RECENT_CHANGES.md | 2026-11-18 | Monsters + Vallaki shipped (`31a7791`) | 2026-11-18 |
+| DECISIONS.md | Folder restructure | index entry; keep LinkedIn `home.html` only | 2026-11-19 |
 | RECENT_CHANGES.md | 2026-11-17 | Vistani, Barovians, Chapter 3 pages | 2026-11-17 |
 | DECISIONS.md | Vallaki Chapters entry | Named Vallaki, not Chapter 4 | 2026-11-18 |
 | DECISIONS.md | Monsters dedicated pages | Working kept unlinked | 2026-11-18 |
